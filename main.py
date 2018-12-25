@@ -1,7 +1,7 @@
 import Tkinter as tk
 
 window = tk.Tk()
-window.title('Calculator')
+
 
 display = tk.Entry(window).grid(columnspan = 5 , row = 0)
 tk.Button(window, text = '7').grid(column = 0 , row = 1)
@@ -22,4 +22,11 @@ tk.Button(window, text = '0').grid(column = 0 , columnspan = 2, row = 4)
 tk.Button(window, text = '.').grid(column = 2 , row = 4)
 tk.Button(window, text = '=').grid(column = 4 , row = 4)
 
-window.mainloop()
+def main():
+    window.title('Calculator')
+    window.geometry("640x480+100+100")
+    window.resizable(False,False)
+    window.mainloop()
+
+if __name__ == "__main__":
+    main()
