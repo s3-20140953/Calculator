@@ -1,3 +1,5 @@
+from setdata import *
+
 #Control Data
 
 class Calculator:
