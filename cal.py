@@ -1,8 +1,7 @@
-from setdata import *
-
+from graphic import *
 #Control Data
 
-class Calculator:
+class Calculator(Graphic):
 
     def __init__(self):
         self.result = 0
